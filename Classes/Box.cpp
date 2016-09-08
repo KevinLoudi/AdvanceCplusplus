@@ -1,11 +1,34 @@
 #include <iostream>
 #include "Box.h"
+#include <string>
 using namespace std;
 
-Line::Line(double len)
+Line::Line(int len)
 {
-    cout << "Object is being created" << endl;
-    length = len;
+    cout << "Normal constructor allocating ptr" << endl;
+    ptr = new int;
+    *ptr=len;
+}
+
+//using initalization list to initialize fields
+//to initalize multiply fields
+//Line::Line(double len,double wid,string col):length(len),width(wid),color(col)
+//{
+//	cout << "Object is being created" << endl;
+//	length = len;
+//}
+
+Line::~Line(void)
+{
+	cout << "Freeing memory!" << endl;
+	delete ptr;
+}
+
+Line::Line(const Line &obj)
+{
+	cout<<"Copy constructot allocating ptr."<<endl;
+	ptr=new int;
+	*ptr=*obj.ptr;
 }
 
 void Line::setLength( double len )
@@ -15,5 +38,6 @@ void Line::setLength( double len )
 
 double Line::getLength( void )
 {
-    return length;
+    //return length;
+	  return *ptr;
 }

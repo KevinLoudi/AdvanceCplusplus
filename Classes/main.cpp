@@ -1,52 +1,59 @@
 #include <iostream>
-#include "Box.h"
+
 using namespace std;
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+class Line
+{
+   public:
+      int getLength( void );
+      Line( int len );             // simple constructor
+      Line( const Line &obj);  // copy constructor
+      ~Line();                     // destructor
 
-/*A class is used to specify the form of an object and it combines data representation and methods 
-for manipulating that data into one neat package
-*/
-int main() {
-//   Box Box1;        // Declare Box1 of type Box
-//   Box Box2;        // Declare Box2 of type Box
-//   double volume = 0.0;     // Store the volume of a box here
-// 
-//   // box 1 specification
-//   // access a public data member
-//   Box1.height = 5.0; 
-//   Box1.length = 6.0; 
-//   Box1.breadth = 7.0;
-//
-//   // box 2 specification
-//   Box2.height = 10.0;
-//   Box2.length = 12.0;
-//   Box2.breadth = 13.0;
-//   // volume of box 1
-//   volume = Box1.height * Box1.length * Box1.breadth;
-//   cout << "Volume of Box1 : " << volume <<endl;
-//
-//   // volume of box 2
-//   volume = Box2.height * Box2.length * Box2.breadth;
-//   cout << "Volume of Box2 : " << volume <<endl;
-//   return 0;
+   private:
+      int *ptr;
+};
 
-//   Line line;
-// 
-//   // set line length
-//   line.setLength(6.0); 
-//   cout << "Length of line : " << line.getLength() <<endl;
-// 
-//   return 0;
+// Member functions definitions including constructor
+Line::Line(int len)
+{
+    cout << "Normal constructor allocating ptr" << endl;
+    // allocate memory for the pointer;
+    ptr = new int;
+    *ptr = len;
+}
 
-	Line line(10.0);
-    // get initially set length.
-    cout << "Length of line : " << line.getLength() <<endl;
-    // set line length again
-    line.setLength(6.0); 
-    cout << "Length of line : " << line.getLength() <<endl;
- 
-    return 0;
-	
+Line::Line(const Line &obj)
+{
+    cout << "Copy constructor allocating ptr." << endl;
+    ptr = new int;
+   *ptr = *obj.ptr; // copy the value
+}
 
+Line::~Line(void)
+{
+    cout << "Freeing memory!" << endl;
+    delete ptr;
+}
+int Line::getLength( void )
+{
+    return *ptr;
+}
+
+void display(Line obj)
+{
+   cout << "Length of line : " << obj.getLength() <<endl;
+}
+
+// Main function for the program
+int main( )
+{
+   Line line1(10);
+
+   Line line2 = line1; // This also calls copy constructor
+
+   display(line1);
+   display(line2);
+
+   return 0;
 }
