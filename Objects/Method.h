@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+/*
 //function overloading and operator overloading
 //specify more than one definition for a function 
 //name or an operator in the same scope
@@ -80,6 +81,7 @@ class Distance
          feet = f;
          inches = i;
       }
+      //overload  
       friend ostream &operator<<(ostream &output,const Distance &D)
       {
       	output<<"Feet: "<<D.feet<<"Inches: "<<D.inches;
@@ -101,7 +103,14 @@ class Distance
       	inches = -inches;
       	return Distance(feet,inches);
 	  }
-	  //overload no
+	  //overload function call
+	  Distance operator()(int a, int b, int c)
+	  {
+	  	Distance D;
+	  	D.feet=a+c+10;
+	  	D.inches=b+c+100;
+	  	return D;
+	  }
 	  bool operator! ()
 	  {
 	  	return (feet<0)||(inches<0);
@@ -169,4 +178,40 @@ class Time
 
 	  
 };
+
+*/
+class Shape {
+   protected:
+      int width, height;
+   public:
+      Shape( int a=0, int b=0)
+      {
+         width = a;
+         height = b;
+      }
+      int area()
+      {
+         cout << "Parent class area :" <<endl;
+         return 0;
+      }
+};
+class Rectangle: public Shape{
+   public:
+      Rectangle( int a=0, int b=0):Shape(a, b) { }
+      int area ()
+      { 
+         cout << "Rectangle class area :" <<endl;
+         return (width * height); 
+      }
+};
+class Triangle: public Shape{
+   public:
+      Triangle( int a=0, int b=0):Shape(a, b) { }
+      int area ()
+      { 
+         cout << "Triangle class area :" <<endl;
+         return (width * height / 2); 
+      }
+};
+
 #endif
