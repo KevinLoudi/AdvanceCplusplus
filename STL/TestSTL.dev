@@ -1,6 +1,6 @@
 [Project]
-FileName=Fileprocessing.dev
-Name=Fileprocessing
+FileName=TestSTL.dev
+Name=TestSTL
 Type=1
 Ver=2
 ObjFiles=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=1
 CompilerSettings=1000000000000000001000000
-UnitCount=3
+UnitCount=1
 
 [VersionInfo]
 Major=1
@@ -52,26 +52,6 @@ SyncProduct=1
 
 [Unit1]
 FileName=main.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit2]
-FileName=Methods.h
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit3]
-FileName=Methods.cpp
 CompileCpp=1
 Folder=
 Compile=1

@@ -1,6 +1,6 @@
 [Project]
-FileName=Fileprocessing.dev
-Name=Fileprocessing
+FileName=Template.dev
+Name=Template
 Type=1
 Ver=2
 ObjFiles=
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=Methods.h
+FileName=Classes.h
 CompileCpp=1
 Folder=
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=Methods.cpp
+FileName=Classes.cpp
 CompileCpp=1
 Folder=
 Compile=1
