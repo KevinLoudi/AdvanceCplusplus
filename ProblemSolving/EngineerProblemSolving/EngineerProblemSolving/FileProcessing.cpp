@@ -10,6 +10,7 @@ FileProcessing::FileProcessing(void)
 {
 }
 
+//read data from a file and valid it 
 int FileProcessing::ReadandCheckDat(char* infile,char* outfile)
 {
 	ifstream fin(infile);
@@ -52,6 +53,7 @@ int FileProcessing::ReadandCheckDat(char* infile,char* outfile)
 	return 0;
 }
 
+//generates a summary report from a data file
 int FileProcessing::GenerateSummaryReport(string infile)
 {
 	ifstream sensor;
@@ -106,6 +108,13 @@ int FileProcessing::GenerateSummaryReport(string infile)
 
 	sensor.close();
 	report.close();
+	return 0;
+}
+
+int FileProcessing::ProcessingHTMLFiles(string infile)
+{
+
+
 	return 0;
 }
 

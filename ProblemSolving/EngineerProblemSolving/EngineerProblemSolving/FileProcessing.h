@@ -15,5 +15,6 @@ public:
 	FileProcessing(void);
 	int ReadandCheckDat(char* infile,char* outfile);
 	int GenerateSummaryReport(string infile);
+	int ProcessingHTMLFiles(string infile);
 	virtual ~FileProcessing(void);
 };
