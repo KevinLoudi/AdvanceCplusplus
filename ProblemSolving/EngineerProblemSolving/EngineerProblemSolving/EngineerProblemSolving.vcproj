@@ -179,6 +179,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\GnerateFile.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.cpp"
 				>
 				<FileConfiguration
@@ -206,6 +210,10 @@
 			>
 			<File
 				RelativePath=".\FileProcessing.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GnerateFile.h"
 				>
 			</File>
 			<File
