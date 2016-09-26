@@ -154,7 +154,7 @@ void FileProcessing::smooth(vector<vector<Pixel>>& image, int w, int h)
 	for(int i=1; i<h-1; i++)
 		for(int j=1; j<w-1; j++)
 			image[i][j] = (image[i][j] + image[i+1][j] + image[i-1][j]
-		+ image[i][j+1] + image[i][j-1])/5;
+		     + image[i][j+1] + image[i][j-1])/5;
 }
 
 int FileProcessing::processimage()

@@ -187,6 +187,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Node.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.cpp"
 				>
 				<FileConfiguration
@@ -222,6 +226,10 @@
 			</File>
 			<File
 				RelativePath=".\GnerateFile.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Node.h"
 				>
 			</File>
 			<File
