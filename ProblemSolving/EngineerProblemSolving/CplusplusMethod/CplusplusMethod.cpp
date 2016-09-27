@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Tdate.h"
 #include "Stduent.h"
+#include "Vehicle.h"
 #include <iostream>
 using namespace std;
 
@@ -69,11 +70,34 @@ int _tmain(int argc, _TCHAR* argv[])
 	cou.assess(stu2,60);
 	cou.assess_compare(stu1,stu2);*/
 
-	Commodity c1("01321","Panda",678.3f),*c1p;
+	/*Commodity c1("01321","Panda",678.3f),*c1p;
 	c1p = &c1;
 	c1p->PriceInfo();
-	c1.PriceInfo();
+	c1.PriceInfo();*/
 
+	//point to member function
+	/*Commodity co("1234","Gifts",1.2f);
+	Commodity *cp=&co;
+
+	//pointer point to member function
+	void (Commodity::*pfun)();
+	//pfun=Commodity::PriceInfo;
+
+	co.PriceInfo();
+	cp->PriceInfo();
+
+	//(co. *pfun)();
+	//(cp->*pfun)();*/
+
+	//const member or ordinary member
+	//When a member is not expected to be changed after construct
+	//we often define it as static, which also mush have inital value
+	Vehicle car("XK 87JIO1");
+	const Vehicle bus("XA 89234W");
+	car.ShowNo();
+	bus.ShowNo();
+	car.ChangeNo("XA 111234");
+	car.ShowNo();
 	system("pause");
 	return 0;
 }

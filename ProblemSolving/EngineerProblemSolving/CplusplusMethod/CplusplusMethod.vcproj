@@ -202,6 +202,10 @@
 				RelativePath=".\Tdate.cpp"
 				>
 			</File>
+			<File
+				RelativePath=".\Vehicle.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Í·ÎÄ¼þ"
@@ -222,6 +226,10 @@
 			</File>
 			<File
 				RelativePath=".\Tdate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Vehicle.h"
 				>
 			</File>
 		</Filter>

@@ -65,7 +65,10 @@ Commodity::Commodity()
 
 void Commodity::PriceInfo()
 {	
-	cout<<"the Price of "<<Name<<" is "<<Price<<endl;
+	//cout<<"the Price of "<<Name<<" is "<<Price<<endl;
+	//when create objects of tha same class, a implicte point "this" point to 
+	//itself
+	cout<<"the Price of "<<this->Name<<" is "<<Price<<endl;
 }
 
 Commodity::~Commodity()
