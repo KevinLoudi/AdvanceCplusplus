@@ -38,15 +38,37 @@ void Counsellor::assess_compare(Stduent &s1, Stduent &s2)
 {
 	if (s1.Score>s2.Score)
 	{
-		cout<<s1.Name<<"performed better"<<endl;
+		cout<<s1.Name<<" performed better"<<endl;
 	}
 	else
 	{
-		cout<<s2.Name<<"performed better"<<endl;
+		cout<<s2.Name<<" performed better"<<endl;
 	}
 }
 
 Counsellor::~Counsellor()
+{
+
+}
+
+Commodity::Commodity(char *cNo,char *cName,float cPrice/*=0*/)
+{
+	strcpy(No,cNo);
+	strcpy(Name,cName);
+	Price=cPrice;
+}
+
+Commodity::Commodity()
+{
+
+}
+
+void Commodity::PriceInfo()
+{	
+	cout<<"the Price of "<<Name<<" is "<<Price<<endl;
+}
+
+Commodity::~Commodity()
 {
 
 }
