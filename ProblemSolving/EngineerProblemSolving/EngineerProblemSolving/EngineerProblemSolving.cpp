@@ -86,11 +86,11 @@ int _tmain(int argc, _TCHAR* argv[])
 		<< n3.getData() << "," << n3.getLeft() << ","
 		<< n3.getRight() << endl;*/
 
-	Point p1(5,4);
+	/*Point p1(5,4);
 	Square s1,s2(p1,4);
 	/* Test print() */
 	/* inherited from Rectangle. */
-	cout << "Square s2 has: " << endl;
+	/*cout << "Square s2 has: " << endl;
 	s2.print(cout);
 	cout << endl;
 	//Test getSide().
@@ -106,7 +106,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Square s1 has: " << endl;
 	s1.print(cout);
 	cout << endl;
-	system("pause");
+	system("pause");*/
 	return 0;
 }
 

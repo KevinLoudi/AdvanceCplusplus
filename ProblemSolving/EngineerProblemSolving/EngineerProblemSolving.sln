@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineerProblemSolving", "EngineerProblemSolving\EngineerProblemSolving.vcproj", "{354E43FF-D6F2-41E7-AD26-87F5F6C62567}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CplusplusMethod", "CplusplusMethod\CplusplusMethod.vcproj", "{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{354E43FF-D6F2-41E7-AD26-87F5F6C62567}.Debug|Win32.Build.0 = Debug|Win32
 		{354E43FF-D6F2-41E7-AD26-87F5F6C62567}.Release|Win32.ActiveCfg = Release|Win32
 		{354E43FF-D6F2-41E7-AD26-87F5F6C62567}.Release|Win32.Build.0 = Release|Win32
+		{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}.Debug|Win32.Build.0 = Debug|Win32
+		{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}.Release|Win32.ActiveCfg = Release|Win32
+		{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
