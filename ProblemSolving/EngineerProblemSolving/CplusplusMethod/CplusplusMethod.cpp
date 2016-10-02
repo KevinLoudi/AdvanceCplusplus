@@ -92,13 +92,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	//const member or ordinary member
 	//When a member is not expected to be changed after construct
 	//we often define it as static, which also mush have inital value
-	Vehicle car("XK 87JIO1");
+	/*Vehicle car("XK 87JIO1");
 	const Vehicle bus("XA 89234W");
 	car.ShowNo();
 	bus.ShowNo();
 	car.ChangeNo("XA 111234");
 	car.ShowNo();
-	system("pause");
+	system("pause");*/
 	return 0;
 }
 

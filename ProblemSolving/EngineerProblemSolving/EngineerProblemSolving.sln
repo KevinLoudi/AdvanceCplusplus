@@ -5,6 +5,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineerProblemSolving", "E
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CplusplusMethod", "CplusplusMethod\CplusplusMethod.vcproj", "{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeGame", "SnakeGame\SnakeGame.vcproj", "{9B26FD64-8790-4DDC-9B21-B7E50E1C0927}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TurorialSeries", "TurorialSeries\TurorialSeries.vcproj", "{27B7255E-4BE2-4D32-9087-EB9B074C2C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +23,14 @@ Global
 		{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}.Debug|Win32.Build.0 = Debug|Win32
 		{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}.Release|Win32.ActiveCfg = Release|Win32
 		{8A0F8101-5BA5-4A95-B03C-32DCAC7C22FA}.Release|Win32.Build.0 = Release|Win32
+		{9B26FD64-8790-4DDC-9B21-B7E50E1C0927}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9B26FD64-8790-4DDC-9B21-B7E50E1C0927}.Debug|Win32.Build.0 = Debug|Win32
+		{9B26FD64-8790-4DDC-9B21-B7E50E1C0927}.Release|Win32.ActiveCfg = Release|Win32
+		{9B26FD64-8790-4DDC-9B21-B7E50E1C0927}.Release|Win32.Build.0 = Release|Win32
+		{27B7255E-4BE2-4D32-9087-EB9B074C2C07}.Debug|Win32.ActiveCfg = Debug|Win32
+		{27B7255E-4BE2-4D32-9087-EB9B074C2C07}.Debug|Win32.Build.0 = Debug|Win32
+		{27B7255E-4BE2-4D32-9087-EB9B074C2C07}.Release|Win32.ActiveCfg = Release|Win32
+		{27B7255E-4BE2-4D32-9087-EB9B074C2C07}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
