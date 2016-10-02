@@ -28,24 +28,42 @@ public:
 	}
 	Dummy(int val)
 	{
-		value=val;
+	  value=val;
 	}
 	Dummy operator+(Dummy a)
 	{
 		cout<<"Additional occured"<<endl;
 		return Dummy(this->value+a.value);
 	}
+	Dummy operator-(Dummy a)
+	{
+		cout<<"Additional occured"<<endl;
+		return Dummy(this->value-a.value);
+	}
 	inline int getvalue(){return value;}
-	~Dummy();
+	friend ostream &operator<<(ostream &o, Dummy a)
+	{
+		o<<a.value;
+		return o;
+	}
+	//we need to be able to change it from the function
+	friend istream &operator>>(istream &o, Dummy & a)
+	{
+		o>>a.value;
+		return o;
+	}
 };
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Dummy a(5);
-	//Dummy b=3;
-	//Dummy c;
-
-	system("pause");
+	/*Dummy a(5);
+	Dummy b=3;
+	Dummy c=a+b;
+	
+	cin>>c;
+	cout<<c<<endl;
+	//cout<<getvalue()<<endl;
+	system("pause");*/
 	return 0;
 }
 
